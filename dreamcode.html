@@ -200,6 +200,22 @@
       transform: scale(1.01);
       box-shadow: 0 30px 45px -12px black, 0 0 0 3px var(--orange-primary);
     }
+    .book-mock {
+      padding: 0;              /* remove inner padding so image fills card */
+      background: transparent; /* optional: let image be the only background */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;       /* keeps rounded corners clean */
+    }
+    
+    .book-mock img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 28px;    /* matches the card's border-radius */
+      object-fit: cover;      /* ensures the image fills nicely if aspect ratio differs */
+    }
 
     .book-icon {
       font-size: 3.2rem;
@@ -541,13 +557,7 @@
         </div>
       </div>
       <div class="book-mock">
-        <div class="book-icon"><i class="fas fa-moon"></i> <i class="fas fa-crown"></i></div>
-        <div class="mock-title">DREAM<span style="color:#ff7b2c;">CODE</span></div>
-        <div style="font-weight: 400; margin: 8px 0;">How to Handle Your Dreams<br> & Change Your Life</div>
-        <div class="mock-author">Esther Yakubu</div>
-        <div style="margin-top: 20px; font-size: 0.8rem; background: rgba(0,0,0,0.4); border-radius: 40px; padding: 6px 12px; display: inline-block;">
-          <i class="fas fa-download"></i> e-book + dream symbols dictionary
-        </div>
+        <img src="Dream Code Front.jpg">
       </div>
     </div>
   </section>
